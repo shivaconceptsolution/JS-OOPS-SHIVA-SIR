@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+		
+   var myVar = 100;
+
+function WhoIsThis() 
+{
+    var myVar = 200;
+
+    alert(myVar); // 200
+    alert(this.myVar); // 100
+    
+}
+WhoIsThis();
+var  obj = new WhoIsThis();
+obj.myVar=12;
+ //alert("hello" + obj);
+ alert(obj.myVar);
+	</script>
+</head>
+<body>
+
+<button >Click</button>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+		
+    function OuterFunction() {
+
+    var outerVariable = 1;
+
+    function InnerFunction() {
+        console.log(outerVariable);
+    }
+ return InnerFunction;
+   
+}
+
+
+ var obj = OuterFunction();
+ obj();
+	</script>
+</head>
+<body>
+
+</body>
+</html>
